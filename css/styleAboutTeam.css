@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6%;
+    padding-left: 6%;
+    background-color: #4070F4;
+  }
+  
+  .logo {
+    cursor: pointer;
+    
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: white;
+    font-weight: 800;
+    
+  }
+  
+  .cta {
+    margin-left: 75px;
+    padding: 9px 25px;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  .cta2 {
+    padding: 9px 25px;
+    background-color: #4070F4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color: white;
+    margin: 10px 10px;
+  }
+  .cta2:hover {
+    background-color: #265DF2;
+  }
+  .cta1 {
+    width: 200px;
+    padding: 9px 25px;
+    background-color: #4070F4;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  .cta1:hover {
+    background-color: #265DF2;
+  }
+  
+  .cta:hover {
+    background-color: #265DF2;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #265DF2;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  .info{
+    min-height: 91vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../assets/football.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0 6%;
+  }
+
+ 
+
+  .info1{
+    min-height: 91vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/football.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0 6%;
+  }
+.info-left{
+  width: 300px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+ 
+
+}
+
+.country{
+  min-width: 300px;
+  color: white;
+  border-radius: 25px;
+  background-color: #4070F4;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.coachP{
+  min-width: 300px;
+  color: white;
+  border-radius: 25px;
+  background-color: #4070F4;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.town{
+  color: white;
+  background-color: darkgrey;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 35%;
+  padding-top: 25px;
+  
+}
+
+.coach{
+  color: white;
+  background-color: darkgrey;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 35%;
+  padding-top: 25px;
+  
+}
+
+.info-center{
+  
+  margin-top:  -6%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+  align-items: center;
+}
+
+.info-right{
+  width: 300px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+ 
+  
+}
+
+.card{
+    
+  border-radius: 25px;
+  background-color: darkgrey;
+  padding: 10px 14px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.card-image{
+    
+  position: relative;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.name{
+  
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
+}
+.flag1{
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: darkgray;
+  border-radius: 25px;
+  padding-top: 25px;
+  
+}
+
+.circle{
+  border-radius: 25% 25% 0% 0%;
+  background-color: #4070F4;
+  width: 110px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.titles{
+  font-size: 30px;
+  color: white;
+  margin-left: -9px;
+}
+
+
+.popup{
+ 
+  background: rgba(0,0, 0,0.6);
+  width: 100%;
+  height: 100%;
+  position:  absolute;
+  top: 0;
+  display: none;
+  justify-content:  center;
+  align-items:  center;
+  text-align: center;
+
+
+}
+
+.popup-content {
+  height: 500px;
+  width: 825px;
+  
+  background-image: url("../assets/court.jpg");
+  background-repeat: no-repeat;
+  background-position : center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.columns{
+  
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.left-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  margin-right: 180px;
+  
+}
+.right-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  
+}
+.text{
+  margin-bottom: 10px;
+}
+.in-put{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 40px;
+  border: none;
+  text-align: center;
+  background-color: darkgrey;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  outline-color: #4070F4;
+}
+
+
+
+
+.close{
+  margin-left: 750px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.namePopUpL{
+  color: white;
+  background-color: #265DF2;
+  font-weight: 600;
+  
+}
+.namePopUpR{
+  background-color: #265DF2;
+  color: white;
+  font-weight: 600;
+}
+
+.teamTable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 50px;
+}
+.teamTable1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+  margin-top: -25px;
+}
+
+.thead{
+   background-color: #265DF2;
+   height: 50px;
+   font-size: 30px;
+}
+
+.teamTableName{
+  font-size: 30px;
+  font-weight: 600;
+}
+.table{
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
